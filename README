@@ -1,0 +1,23 @@
+
+=================================================================================
+
+CC430f5137 on TinyOS
+
+I have a CC430F5137 based mote on which I'm trying to get TinyOS to run. Although the CC430
+is supported in TinyOS by the SURF platform, I had to change the pin settings on the tinyprod code to match the 
+LED and UART connections on my mote:
+
+LED1 (Red) ----> Connected to P1.7
+LED2 (Green) ----> Connected to P3.6
+LED3 (Orange) ----> Connected to P3.7
+
+UART RX -----> Connected to P2.0
+UART TX -----> Connected to P2.1
+
+The files in this repo are the files from tinyprod I had to change to reflect my pin connections. 
+
+
+ 
+
+
+

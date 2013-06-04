@@ -95,11 +95,19 @@ module PlatformLedP {
     { (port_t*)P3IN_, 1 << 1 }, // Green
     { (port_t*)P3IN_, 1 << 2 }, // Red
 #elif defined(SURF_REV_A)
-    { (port_t*)P1IN_, 1 << 0 }, // Blue
+    /*{ (port_t*)P1IN_, 1 << 0 }, // Blue
     { (port_t*)P1IN_, 1 << 1 }, // White
     { (port_t*)P1IN_, 1 << 2 }, // Red
     { (port_t*)P3IN_, 1 << 6 }, // Yellow
-    { (port_t*)P3IN_, 1 << 7 }, // Green
+    { (port_t*)P3IN_, 1 << 7 }, // Green*/
+
+//changing pins to match my mote LEDs connected to P1.7, P3.6 and P3.7
+    { (port_t*)P1IN_, 1 << 7 }, // Red
+    { (port_t*)P3IN_, 1 << 6 }, // Green
+    { (port_t*)P3IN_, 1 << 7 }, // Orange
+
+
+
 #else
     { (port_t*)P3IN_, 1 << 0 }, // Green
     { (port_t*)P3IN_, 1 << 1 }, // Red

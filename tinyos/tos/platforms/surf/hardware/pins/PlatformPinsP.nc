@@ -110,10 +110,14 @@ implementation {
       PJOUT = 0x0;
 #endif 
 
-#if 0 /* Disabled: these specific setting sare defaults, but others might not be */
+//#if 0 /* Disabled: these specific setting sare defaults, but others might not be */
+
+#if defined (SURF_REV_A) 	//change the TX and RX pins to match my mote.
       PMAPPWD = PMAPPW;                         // Get write-access to port mapping regs  
-      P1MAP5 = PM_UCA0RXD;                      // Map UCA0RXD output to P1.5
-      P1MAP6 = PM_UCA0TXD;                      // Map UCA0TXD output to P1.6
+      //P1MAP5 = PM_UCA0RXD;                      // Map UCA0RXD output to P1.5
+      //P1MAP6 = PM_UCA0TXD;                      // Map UCA0TXD output to P1.6
+	P2MAP0 = PM_UCA0RXD;                    // Map UCA0RXD output to P2.0
+      	P2MAP1 = PM_UCA0TXD;                    // Map UCA0TXD output to P2.1
       PMAPPWD = 0;                              // Lock port mapping registers 
 #endif //
 

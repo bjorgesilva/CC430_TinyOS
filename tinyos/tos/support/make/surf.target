@@ -1,8 +1,11 @@
 # Target definition for the People Power Company Sensor Ultra Radio Frequency
 # development board.
 
-# Unless otherwise specified, assume revision B2 of the SuRF board
-SURF_REV ?= B2
+#Unless otherwise specified, assume revision B2 of the SuRF board
+#SURF_REV ?= B2
+
+# Unless otherwise specified, assume revision A of the SuRF board
+SURF_REV ?= A
 HAS_FLASH ?= 1
 
 #IAR_MCU_GROUP = cc430x513x
